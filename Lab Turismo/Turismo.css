@@ -145,14 +145,83 @@ footer a {
     text-decoration: none;
 }
 
-/*celular 
+/*celular*/
 @media (max-width:767px) { 
-    body {
-        background-color:#F00;
+    
+    .carousel-controller {
+        position: absolute;
+        top: 75px;  
+        width:73%;
+        left: 50px;
+    }
+
+    .carousel-bullets {
+        position:absolute;
+        top: 130px;
+
+        left: 50px;
+    }
+
+    .carousel ul {
+        list-style: none;
+        margin: 0;
+        padding:0;
+        height: 30px;
+    }
+
+    .box, .box-2 {
+        border:1px solid #aaa;
+        background-color: #ddd;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        margin-bottom: 30px;
+    }
+    .box img, .box-2 img{
+        width: 100%;
+    }
+
+    .box p{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .box h3{
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    .row .box button{
+        padding: 10px 15px 10px 15px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .media ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    footer ul{
+        margin-top: 0px;
+    }
+
+    footer .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer p{
+        margin-top: 0px;
     }
 }
 /*tablet*/
-@media (min-width: 768px) and (max-width:991px) { 
+@media (min-width: 768px) and (max-width:1025px) { 
     body {
         background-color:chocolate;
     }
@@ -164,12 +233,20 @@ footer a {
         flex-direction: row;
         flex-wrap:wrap;
     }
+        .row-2 {
+        width: 733px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: row;
+    }
 
     .box {
         width:350px;
         box-sizing: border-box;
         margin: 10px 16px;
         border-radius: 5px;
+
     }
     .box:nth-child(odd) {
         margin-left:0;
@@ -190,10 +267,30 @@ footer a {
         float:right;
         margin: 10px;
     }
+    .box-2{
+        flex: 70%;
+    }
 
+    footer .row{
+        justify-content: space-between;
+    }
+
+    .media ul{
+        display: flex;
+        list-style: none;
+    }
+    .media li{
+        margin-left: 10px;
+    }
+    .carousel-controller {
+        position: absolute;
+        top:150px;  
+        width:87%;
+        left: 50px;
+    }
 }
 /*desktop*/
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
 
     .container {
         width: 1000px;
@@ -208,7 +305,13 @@ footer a {
         flex-direction: row;
     }
 
-    
+    .row-2 {
+        width:920px;
+        margin: auto;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+    }
 
     .box, .box-2 {
         margin: 10px 15px;
